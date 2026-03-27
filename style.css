@@ -1,0 +1,139 @@
+/* هذا الكود يستهدف فقط النصوص والفقرات والكلمات الباردة بداخلها */
+p, span, li, b, strong, .pp-content {
+    color: #4b4b4b !important; /* رمادي داكن مريح جداً */
+}
+
+/* لضمان بقاء العناوين الزرقاء كما هي وعدم تأثرها */
+h1, h2, h3, .pp-title {
+    color: #0056b3 !important; /* اللون الأزرق الخاص بك */
+}
+
+/* لضمان بقاء العنوان الأبيض داخل المستطيل الأزرق كما هو */
+.pp-header h1, .header-text, .white-text {
+    color: #ffffff !important; /* الحفاظ على اللون الأبيض */
+}
+.pp-trust-box {
+    background-color: #fcfcfc; /* أفتح قليلاً لزيادة التباين المريح */
+    border-right: 6px solid #0056b3; 
+    padding: 25px;
+    border-radius: 15px;
+    margin: 35px 0;
+    direction: rtl;
+    line-height: 1.9; /* تباعد أسطر مثالي للقراءة بتركيز */
+}
+
+.trust-title {
+    color: #0056b3 !important; 
+    font-size: 18px !important; 
+    margin-bottom: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.trust-text {
+    color: #444444 !important; /* درجة رمادي مدروسة تقنياً لراحة الشبكية */
+    font-size: 16px !important; 
+    margin: 0;
+}
+
+.trust-text strong {
+    color: #004494 !important; 
+}
+/* التصميم البلوري النحيف والأنيق */
+.side-counter-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.glass-mini-card {
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 8px 25px; /* الطول النحيف الذي طلبته */
+    max-width: 180px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.connection-status {
+    color: #27ae60 !important;
+    font-size: 10px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.pulse-dot {
+    height: 7px;
+    width: 7px;
+    background-color: #27ae60;
+    border-radius: 50%;
+    margin-left: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+/* حركة النبض */
+.pulse-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    animation: pulse-ring 1.5s infinite;
+}
+
+.counter-num-black {
+    color: #000000 !important;
+    font-size: 24px !important;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.daily-total {
+    color: #666;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+@keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.8; }
+    80% { transform: scale(2.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+}
+/* إضافة الخط الأزرق الجانبي لكل عناوين الفقرات */
+.separate-box h2 {
+    border-right: 5px solid #0056b3; /* الخط جهة اليمين لأن اللغة عربية */
+    padding-right: 12px; /* مسافة بين الخط والنص */
+    margin-bottom: 15px; /* مسافة تحت العنوان */
+    font-size: 18px;
+    color: #0056b3; /* جعل لون النص متناسق مع الخط */
+    font-weight: 800;
+    line-height: 1.4;
+}
+/* تنسيق إبراز قسم النقاط الذهبية - ApexNexus Edition */
+.gold-section {
+    border-right: 5px solid #0056b3 !important; /* الخط الأزرق الجانبي الفخم */
+    background-color: #fcfcfc !important; /* خلفية خفيفة للبروز */
+    padding: 20px 25px !important;
+    border-radius: 12px !important;
+    margin: 30px 0 !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03); /* ظل خفيف جداً */
+}
+
+/* تكبير وإبراز العنوان فقط */
+.gold-section h2 {
+    color: #0056b3 !important;
+    font-size: 22px !important; /* حجم كبير وواضح */
+    font-weight: 900 !important; /* خط سميك جداً */
+    margin-bottom: 20px !important;
+    border: none !important; /* إزالة الخط الصغير لعدم التكرار */
+    padding: 0 !important;
+}
