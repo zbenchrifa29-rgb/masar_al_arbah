@@ -1,5 +1,5 @@
 // محرك ApexNexus الموزون - سرعة متوسطة وزيادة متغيرة
-let count = 547;
+let count =547;
 const counterElement = document.getElementById('visitor-count');
 
 function runTrustCounter() {
